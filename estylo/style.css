@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "HOSHIKO" ;
+    src: url(../fonts/Hoshiko\ Satsuki.ttf) format("truetype");
+    font-weight: normal;
+}
+
+:root{
+    --cor01: #01258F ;
+    --cor02: #011142;
+    --cor03: #0231BD;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, var(--cor03), var(--cor02), var(--cor01));
+}
+header{
+    display: flex;
+    background-image: linear-gradient(to right, var(--cor03), var(--cor01), var(--cor02) ) ;
+    padding: 10px;
+    flex-flow: column;
+}
+header > h1 {
+    color: white;
+    font-size: 1.1em;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.445);
+    font-family: "HOSHIKO";
+    letter-spacing: 10px;
+    text-align: center;
+}
+header > nav{
+    display: flex;
+    flex-flow: column;
+}
+header > nav > a {
+    text-decoration: none;
+    color: white;
+    background-color: #0111428b;
+    padding: 4px;
+    margin: 4px;
+    border-radius: 4px;
+    text-align: center;
+}
+main{
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    outline: 2px solid black;
+}
+ section > h2 {
+    text-align: center;
+    letter-spacing: 7px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+section.container{
+    display: flex;
+    gap: 20px;
+    margin: 10px;
+}
+div.hero1, div.hero2 {
+
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    margin-top: 20px;
+    border: 3px solid #011142;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    transition: transform 0.4s ease;
+}
+div.hero1 {
+    background-image: url(../imagens/gym.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+}
+div.hero2{
+    background-image: url(../imagens/gym2.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+}
+div.hero1:hover, div.hero2:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+div.hero2 > h3, div.hero1 > h3 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 1.5em;
+    letter-spacing: 10px;
+
+    text-shadow: 1px 1px 0px #011142;
+}
+div.hero2 > p.apartir{
+    color: white;
+    margin-bottom: 10px;
+}
+div.hero2 > p.reais {
+    color: #0040ff;
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+div.hero2 > p.nmes{
+    color: white;
+    margin-top: 10px;
+}
+div.hero2 > a, div.hero1 > a{
+    background-color: #0040ff7c;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+
+    margin:auto;
+    margin-top: 20px;
+}
+div.hero2 > a:hover, div.hero1 > a:hover {
+    background-color: #011142;
+    text-decoration: underline;
+    transition: 2s;
+    transform:  scale(1.05);
+}
+
+div.hero1 > p {
+    color: white;
+    
+}
+div.hero1 > p.partir{
+    color: aliceblue;
+    text-align: center;
+    font-size: 0.9em;
+}
+div.hero1 > p.plano{
+    color: #0040ff;
+    font-weight: bolder;
+    font-size: 1.6em;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+div.hero1 > p.mes{
+    font-size: 0.9em;
+}
+div.hero1 > ul {
+    color: white;
+    padding: 20px;
+    
+}
+
