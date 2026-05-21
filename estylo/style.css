@@ -112,7 +112,6 @@ section#planosunidades > p {
     text-align: center;
 }
 div.hero1, div.hero2 {
-
     width: 100%;
     max-width: 300px;
     height: 400px;
@@ -122,7 +121,6 @@ div.hero1, div.hero2 {
     display: flex;
     flex-flow: column;
     align-items: center;
-
     transition: transform 0.4s ease;
 }
 div.hero1 {
@@ -227,26 +225,38 @@ section > p{
     text-indent: 30px;
     text-align: center;
 }
-section > div.aviso{
+section > div.aviso { 
+    display: flex;
     border: 3px solid #0231BD;
     max-width: 540px;
     height: 200px;
     margin: auto;
     margin-top: 30px;
-    padding: 20px;
-}
+    padding: 10px;
 
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 8px;
+}
 section > div.aviso > h3 {
+    margin-top: 10px;
     color: #0231BD;
     font-size: 1.2em;
-    margin-bottom: 10px;
+    
 }
 section > div.aviso > ul{
     list-style: decimal;
-    padding: 10px;
+    padding-left: 54px;
+}
+section > div.aviso > ul > li {
+    margin-top: 5px;
 }
 section > div.aviso > ul > li > span{
     font-weight: bold;
+}
+section > div.aviso >  img {
+    
+    max-width: 40px;
 }
 section#banner{
     width: 100%;
@@ -346,7 +356,7 @@ section#banner > div.nos > div#imgapp > p.download > a:hover{
 aside > section > details > summary {
     font-size: 1.3em;
     cursor: pointer;
-    transition:  transform 03 ease ;
+    transition:  transform 0.3s ease ;
 }
 aside > section > details > summary:hover {
     color: #003ef7;
@@ -371,11 +381,68 @@ aside > section > details > ul, aside > section > details > ul > p{
 aside > section > details > ul > li > span, aside > section > details > p > span, aside > section > details > ul > p > span{
     font-weight: bold;
 }
-aside > section > details > ul > li > span.taxaalpha{
+
+aside > section > details > summary::after{
+    display: flex;
+    transition:  transform 0.3s ease;
+    list-style: none;
+    content: "▼";
+}
+aside > section > details[open] > summary::after{
+    transform: rotate(180deg);
+}
+aside > section > details[open] > summary{
+    color: #003ef7;
+}
+aside > section > details > ul > li > span.taxaalpha, aside > section > details > p> span.modalidadesoferecida{
     color: #0040ff;
+}
+aside > section > details > p > span.modalidadesoferecida, aside > section > details > p{
+    text-align: center;
+
 }
 aside > section > details > ul > li {
     margin-top: 10px;
     text-indent: 10px;
     text-align: justify;
+}
+aside > section > details > ul > li > a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #003ef7;
+    padding: 4px;
+    border-radius: 10px; 
+    transition:  transform 0.4s ease;
+}
+aside > section > details > ul > li > a:hover{
+    cursor: pointer;
+    background-color: #00207e;
+    text-decoration: underline;
+    transform: scale(1.05);
+
+}
+aside > section > details > p{
+    text-align: center;
+}
+aside > section > details >  p > a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #003ef7;
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+
+    transition:  transform 0.4s ease;
+}
+aside > section > details > p  >  a:hover{
+    background-color: #00207e;
+    text-decoration: underline;
+    cursor: pointer;
+    transform: scale(1.07);
+
+}
+aside > section > details > p > a.taxas{
+    font-size: 0.8em;
+
 }
