@@ -23,18 +23,16 @@ body{
     background-image: linear-gradient(to right, var(--cor03), var(--cor02), var(--cor01));
     font-family: Arial, Helvetica, sans-serif;
 }
-header{
+
+.menu-nav-bar{
     display: flex;
-    align-items: center;
-    background-color: white;
-
-    justify-content: space-between;
-    gap: 20px;
+    background-color: rgb(236, 234, 234);
 }
 
-header > nav{
-    display: none;
+#mnburg{
+    display: none; 
 }
+
 .menu-nav {
     display: flex;
     text-decoration: none;
@@ -43,8 +41,6 @@ header > nav{
     padding: 4px;
     margin: 4px;
     border-radius: 4px;
-
-    justify-content: center;
     transition: transform 0.3s ease;
 }
 .menu-nav:hover{
@@ -56,22 +52,25 @@ header > nav{
 .logo{
     width: 140px;
 }
-#container{
-    display: flex;
-    align-items: center;
-}
+
+
 .btn-buscar{
-    background-image: linear-gradient(to right, var(--cor03), var(--cor01), var(--cor02));
+    background-color: #00207e;
     color: rgb(255, 255, 255);
     padding: 10px;
     text-decoration: none;
     border-radius: 10px;
     font-weight: bolder;
-}
-.btn-buscar:hover {
-    background-color: #003ef7;
 
+    transition: transform 0.4s ease;
 }
+.btn-buscar:hover{
+    background-color: #0040ff;
+    transform: scale(1.03);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 #burguer{
     color: rgb(4, 1, 1);
     padding: 10px;
@@ -391,15 +390,6 @@ div.duvida > p{
     font-weight: bold;
 }
 
-.faq-pergunta::after{
-    display: flex;
-    transition:  transform 0.3s ease;
-    list-style: none;
-    content: "▼";
-}
-.faq-item[open] .faq-pergunta::after{
-    transform: rotate(180deg);
-}
 
 .lista-titulo2{
     text-align: center;
