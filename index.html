@@ -9,193 +9,210 @@
     <title>ALPHA FIT</title>
 </head>
 <body>
-    <header>
-        <img class="logo" src="imagens/Alpha-Fit-200.png" alt="Logo Alpha">
-         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    <header> 
+         <div id="container">
+            <img class="logo" src="imagens/Alpha-Fit-200.png" alt="Logo da Alpha Fit"> 
+         </div>
+         <div id="buscando-academia">
+            <a class="btn-buscar"  href="#">Buscar Academia</a>
+         </div>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <nav id="mnburg">
-            <a href="#">UNIDADES</a>
-            <a href="#">PLANOS</a>
-            <a href="#">SEJA UM MEMBRO</a>
-            <a href="#">CONTACTO</a>
-            <a href="#">INFORMAÇÕES</a>
+            <a class="menu-nav" href="#">UNIDADES</a>
+            <a class="menu-nav" href="#">PLANOS</a>
+            <a class="menu-nav" href="#">SEJA UM MEMBRO</a>
+            <a class="menu-nav" href="#">CONTACTO</a>
+            <a class="menu-nav" href="#">INFORMAÇÕES</a>
         </nav>
     </header>
     <main>
         <section>
-            <h1>Conheça Nossos Planos Aqui</h1>
+            <div class="embaixador-img ">
+
+            </div>
+            <h1>Conheça Nossos <span class="alpha-blue">Planos Aqui</span></h1>
             <p>
                 Comece a cuidar da sua saúde hoje mesmo! Na Alpha Fit, temos o pacote de serviços ideal para que você alcance seus objetivos de saúde e bem-estar. É só comparar e escolher o plano com o melhor custo-benefício.
             </p>
-            <div class="container">
-                <div class="hero1">
-                <h3>PLANO PLUS</h3>
-                <p class="partir">A PARTIR DE: </p>
-                <p class="plano">R$ 0,99*</p>
-                <p class="mes">Apenas no primeiro Mês</p>
-                <a href="#">MATRICULA-SE</a>
-                <ul>
+            <div class="cards">
+                <div class="card1">
+                <h3 class="titulo-plano">PLANO PLUS</h3>
+                <p class="texto-preco">A PARTIR DE: </p>
+                <p class="valor-plano">R$ 0,99*</p>
+                <p class="periodo-plano">Apenas no primeiro Mês</p>
+                <a class="card-botao" href="#">MATRICULE-SE</a>
+                <ul class="beneficios-plano">
                     <li>Sem Fidelidade</li>
                     <li>Sem Anuidade</li>
                     <li>Horario Livre</li>
                     <li>Treino Liberado Em Todas As Unidades</li>
                 </ul>
+                </div>
             </div>
-            <div class="hero2">
-                <h3>PLANO INFINITY</h3>
-                <p class="apartir">
+            <div class="cards">
+             <div class="card2">
+                <h3 class="titulo-plano">PLANO INFINITY</h3>
+                <p class="texto-preco">
                     A PARTIR DE:
                 </p>
-                <p class="reais"> 
+                <p class="valor-plano"> 
                     R$ 120,00
                 </p>
-                <p class="nmes">Por Mês</p>
-                <a href="#">MATRICULA-SE</a>
-                <ul class="pinfinity">
+                <p class="periodo-plano">Por Mês</p>
+                <a class="card-botao" href="#">MATRICULE-SE</a>
+                <ul class="beneficios-plano">
                     <li>Sem Fielidade</li>
                     <li>Sem Anuidade</li>
                     <li>Horario Livre</li>
                     <li>Cadeira De Massagem</li>
                     <li>Plano De Sáude</li>
                 </ul>
+              </div>
             </div>
-            <section>
-                <p>Confira os valores dos planos na unidade <span class="alpha">ALPHA FIT</span> desejada.</p>
+            <section id="planos-aviso">
+                <p class="descricao-unidade">Confira os valores dos planos na unidade <span class="alpha-blue">ALPHA FIT</span> desejada.</p>
                 <div class="aviso">
-                    <img src="imagens/ponto-de-exclamacao.png" alt="ponto de exclamção">
-                    <h3>AVISO:</h3>
-                    <ul>
-                        <li>Menores <span>entre 12 e 18 anos</span> incompletos devem estar acompanhados de seu representante legal no primeiro acesso à Unidade escolhida munidos de documento comprobatório.</li>
-                        <li>Para pagamento em moeda corrente, favor consultar o balcão de atendimento da Unidade escolhida.</li>
+                    <img class="ponto-exclamacao" src="imagens/ponto-de-exclamacao.png" alt="ponto de exclamção">
+                    <h3 class="titulo-aviso">AVISO:</h3>
+                    <ul class="descricao-aviso">
+                        <li >
+                            Menores <span class="texto-bolder">entre 12 e 18 anos</span> incompletos devem estar acompanhados de seu representante legal no primeiro acesso à Unidade escolhida munidos de documento comprobatório.
+                        </li>
+                        <li>
+                            Para pagamento em moeda corrente, favor consultar o balcão de atendimento da Unidade escolhida.
+                        </li>
                     </ul>
                 </div>
             </section>
-            <section id="banner">
-               <div class="nos">
-                <h1>Por quê a <span>ALPHA FIT</span> é diferente?</h1>
-                <p>
+            <section id="diferenciais">
+               <div class="assunto-extra">
+                <h1 class="alpha-diferente">Por quê a <span class="alpha-blue">ALPHA FIT</span> é diferente?</h1>
+                <p class="descricao">
                     Acreditamos que o exercício é para todos! Por isso, proporcionamos a melhor infraestrutura, equipamentos de última geração e professores altamente qualificados para que cada aluno alcance sua melhor versão.
                 </p>
-                <h2>Fidelidade e adesão <span class="diferente">ZERO</span></h2>
-                <p>
+                <h2 class="fidelidade-adesao">Fidelidade e adesão <span class="alpha-blue">ZERO</span></h2>
+                <p class="descricao">
                     Na Alpha Fit, você começa porque é diferente e fica porque funciona! Não cobramos absolutamente nada pela adesão e você permanece com a gente pelo tempo que desejar. Assim, você foca no que importa: cuidar da sua saúde.
                 </p>
-                <h2 class="modalidades">Modalidades <span>Exclusivas</span></h2>
-                <p>
+                <h2 class="titulo-modalidades">Modalidades <span class="alpha-blue">Exclusivas</span></h2>
+                <p class="descricao">
                     Espaços planejados para promover uma vida mais ativa, com maior mobilidade, possibilitando ao aluno se movimentar, tonificar seus músculos, perder peso e ganhar massa magra.
                 </p>
-                <h1 class="beneficios"> Quer Ainda Mais Beneficios? </h1>
-                <p>
-                    Confira outros diferenciais que só os alunos Selfit podem aproveitar:
+                <h1 class="beneficios"> Quer Ainda Mais <span class="alpha-blue">Beneficios?</span></h1>
+                <p class="descricao">
+                    Confira outros diferenciais que só os alunos <span class="alpha-blue">Alpha Fit</span> podem aproveitar:
                 </p>
-                <div id="imgapp">
+                <div id="imagem-aplicativo">
                     <div class="appimagem">
                     </div>
-                    <h1 class="appalpha">ALPHA FIT APP</h1>
-                    <p>
+                    <h1 class="alpha-app">ALPHA FIT APP</h1>
+                    <p class="descricao-app">
                         Fique Por Dentro das ultimas novidades, organize sua rotina de treinos e agende suas aulas coletivas da semana, tudo pelo app Alpha Fit
                     </p>
-                    <p class="download">
-                        <a href="#">DOWNLOAD APP</a>
-                    </p>
+                        <a class="download-app" href="#">DOWNLOAD APP</a>
                 </div>
-                <p class="saibamais"><a href="#">SAIBA MAIS SOBRE A ALPHA FIT</a></p>
+                <p class="saibamais"><a class="saibamais-botao" href="#">SAIBA MAIS SOBRE A ALPHA FIT</a></p>
                </div>
             </section>
         </section>
              <div class="duvida">
-                <h2>Ficou Alguma Duvida?</h2>
-             <p>
+                <h2>Ficou Alguma <span class="alpha-blue">Duvida?</span></h2>
+             <p class="descricao-duvida">
                 Na Alpha Fit, queremos que você escolha o plano perfeito com total confiança. Reunimos as principais perguntas dos nossos alunos para ajudar você a entender todos os benefícios, modalidades e vantagens exclusivas da nossa academia.
              </p>
              </div>
 
-        <aside>
-            <section> 
-                <details>
-                  <summary>Porque Devo Me Exercitar Na Alpha Fit ?</summary>
-                  <ul>
-                    <li><span>Baixo custo, alta qualidade:</span> Aqui, você começa porque é diferente e permanece porque funciona! Nossas mensalidades são acessíveis e proporcionam aos nossos alunos o acesso a unidades novas e bem equipadas, com profissionais dedicados e pessoas que compartilham do mesmo objetivo: cuidar, com prazer, dos seus treinos, da sua mobilidade e da sua saúde.</li>
-                    <li><span>Sem Fidelidade, e adesão Zero:</span> Junte-se a nós sem complicações! Na <span class="taxaalpha">Alpha Fit</span>, não cobramos taxa de adesão, taxa de fidelidade ou multa de cancelamento e você permanece pelo tempo que desejar. Nosso foco está em proporcionar a melhor experiência para nossos alunos, permitindo que sua atenção esteja totalmente voltada à sua saúde.</li>
-                    <li><span>Modalidades Exclusivas:</span> A <span class="taxaalpha">Alpha Fit</span> oferece diversas modalidades de exercícios, cada uma atendendo a necessidades específicas. <span>Alpha Velo</span>, o treino de cárdio para quem gosta de suar muito; <span>Alpha Force</span>, com os melhores equipamentos de musculação; <span>Alpha Intense</span>, para quem gosta de treino funcional; <span>Alpha Extreme</span>, um circuito de exercícios de alta intensidade; <span>Alpha Speed</span>, com aulas dinâmicas de spinning; e <span>Alpha Move</span>, com aulas coletivas dinâmicas e muito animadas! Confira mais detalhes das nossas modalidades aqui.</li>
-                    <li><span>App Alpha Fit:</span> Sua academia sempre ao seu alcance! Fique por dentro das últimas novidades, planeje seus treinos, agende suas aulas sem complicações e muito mais, tudo na palma da sua mão.</li>
-                    <li><span>Convide entre 5 e 10 amigos:</span> Compartilhe seu estilo de treino! Você tem entre 5 e 10 convites por mês para distribuir entre amigos, colegas e familiares, proporcionando a eles a oportunidade de experimentar o que a Selfit tem de melhor. Os <span>Alunos PLUS</span> e <span>Alunos Infinity</span> podem levar 5 ou 10 amigos, respectivamente, para “treinarem juntos”, os acessos estão condicionados à permanência do Aluno na Alpha Fit.</li>
-                    <li><span>App Weburn (Plano Infinity):</span> Para um upgrade nos treinos, conte com um verdadeiro personal trainer de bolso, repleto de conteúdos exclusivos de saúde e bem-estar.</li>
-                    <li><span>Treine onde quiser (Planos Plus e Infinity):</span> Com os <span>Planos Plus e Infinity</span>, a liberdade é sua. Escolha a unidade mais próxima do trabalho ou de casa e treine no seu tempo, do seu jeito!</li>
+        <aside id="faqs" >
+            <section class="container-faq"> 
+                <details class="faq-item">
+                  <summary class="faq-pergunta">Porque Devo Me Exercitar Na Alpha Fit ?</summary>
+                  <ul class="faq-lista">
+                    <li class="descricao-lista"><span class="texto-bolder">Baixo custo, alta qualidade:</span> Aqui, você começa porque é diferente e permanece porque funciona! Nossas mensalidades são acessíveis e proporcionam aos nossos alunos o acesso a unidades novas e bem equipadas, com profissionais dedicados e pessoas que compartilham do mesmo objetivo: cuidar, com prazer, dos seus treinos, da sua mobilidade e da sua saúde.</li>
+                    <li><span class="faq-highlight">Sem Fidelidade, e adesão Zero:</span> Junte-se a nós sem complicações! Na <span class="alpha-blue">Alpha Fit</span>, não cobramos taxa de adesão, taxa de fidelidade ou multa de cancelamento e você permanece pelo tempo que desejar. Nosso foco está em proporcionar a melhor experiência para nossos alunos, permitindo que sua atenção esteja totalmente voltada à sua saúde.</li>
+                    <li><span class="faq-highlight">Modalidades Exclusivas:</span> A <span class="alpha-blue">Alpha Fit</span> oferece diversas modalidades de exercícios, cada uma atendendo a necessidades específicas. <span class="faq-highlight">Alpha Velo</span>, o treino de cárdio para quem gosta de suar muito; <span class="faq-highlight">Alpha Force</span>, com os melhores equipamentos de musculação; <span class="faq-highlight">Alpha Intense</span>, para quem gosta de treino funcional; <span class="faq-highlight">Alpha Extreme</span>, um circuito de exercícios de alta intensidade; <span>Alpha Speed</span>, com aulas dinâmicas de spinning; e <span>Alpha Move</span>, com aulas coletivas dinâmicas e muito animadas! Confira mais detalhes das nossas modalidades aqui.</li>
+                    <li><span class="faq-highlight">App Alpha Fit:</span> Sua academia sempre ao seu alcance! Fique por dentro das últimas novidades, planeje seus treinos, agende suas aulas sem complicações e muito mais, tudo na palma da sua mão.</li>
+                    <li><span class="faq-highlight">Convide entre 5 e 10 amigos:</span> Compartilhe seu estilo de treino! Você tem entre 5 e 10 convites por mês para distribuir entre amigos, colegas e familiares, proporcionando a eles a oportunidade de experimentar o que a Selfit tem de melhor. Os <span class="faq-highlight">Alunos PLUS</span> e <span class="faq-highlight">Alunos Infinity</span> podem levar 5 ou 10 amigos, respectivamente, para “treinarem juntos”, os acessos estão condicionados à permanência do Aluno na Alpha Fit.</li>
+                    <li><span class="faq-highlight">App Weburn (Plano Infinity):</span> Para um upgrade nos treinos, conte com um verdadeiro personal trainer de bolso, repleto de conteúdos exclusivos de saúde e bem-estar.</li>
+                    <li><span class="faq-highlight">Treine onde quiser (Planos Plus e Infinity):</span> Com os <span class="faq-highlight">Planos Plus e Infinity</span>, a liberdade é sua. Escolha a unidade mais próxima do trabalho ou de casa e treine no seu tempo, do seu jeito!</li>
                   </ul>
                 </details>
 
-                <details>
-                    <summary>Quais são os planos disponiveis ?</summary>
-                    <p> A <span class="modalidadesoferecida">Alpha Fit</span> oferece dois pacotes padrão para seus alunos: o <span>Plano LIGHT</span> e o <span>Plano PLUS</span>.</p>
-                    <ul>
-                        <li><span>Plano LIGHT:</span> Este pacote é direcionado para aqueles que desejam realizar treinos de ergometria e musculação exclusivamente na unidade onde estão matriculados. Os alunos que optam por este plano não têm acesso às aulas coletivas e não podem frequentar outras unidades Alpha em território nacional ganham de bônus 30 dias de acesso ao aplicativo Weburn.</li>
-                        <li><span>Plano PLUS:</span> Mais energia, mais desempenho e mais liberdade para alcançar seus objetivos! Com o <span>Plano PLUS da Alpha Fit</span>, você treina sem limites, com acesso a equipamentos modernos, ambiente premium e total flexibilidade para sua rotina.</li>
-                        <li><span>Plano INFINITY:</span> Vá além dos seus limites com o <span>Plano INFINITY!</span> Aproveite acesso total às unidades Alpha Fit, treine com liberdade e desfrute de benefícios exclusivos como plano de saúde, cadeira de massagem e uma experiência premium criada para elevar sua saúde, conforto e qualidade de vida.</li>
-                        <p><span>Adicionalmente, disponibilizamos pacotes especiais:</span></p>
-                        <li><span>Plano DAY-USE:</span> Experimente toda a energia da Alpha Fit sem compromisso! Com o <span>Plano Day-Use</span>, você tem acesso completo à academia por um dia inteiro, utilizando equipamentos modernos, áreas exclusivas e um ambiente preparado para elevar sua performance.</li>
-                        <li><span>Plano CORPORATIVO:</span> Invista no desempenho da sua equipe com o <span>Plano Corporativo</span> Alpha Fit. Proporcionamos acesso a treinos, equipamentos modernos e benefícios exclusivos para incentivar hábitos saudáveis, melhorar o bem-estar dos colaboradores e fortalecer a produtividade da sua empresa.</li>
-                        <li><span>Plano Plus Digital:</span> Leve a experiência Alpha Fit para o seu dia a dia com o Plano Plus Digital. Acompanhe seus treinos, organize sua rotina fitness e tenha acesso a recursos exclusivos pelo app, tudo com praticidade, tecnologia e total flexibilidade.</li>
+                <details class="faq-item">
+                    <summary class="faq-pergunta">Quais são os planos disponiveis ?</summary>
+                    <p class="descricao-faq"> A <span class="alpha-blue">Alpha Fit</span> oferece dois pacotes padrão para seus alunos: o <span class="faq-highlight">Plano LIGHT</span> e o <span class="faq-highlight">Plano PLUS</span>.</p>
+                    <ul class="faq-lista">
+                        <li><span class="faq-highlight">Plano LIGHT:</span> Este pacote é direcionado para aqueles que desejam realizar treinos de ergometria e musculação exclusivamente na unidade onde estão matriculados. Os alunos que optam por este plano não têm acesso às aulas coletivas e não podem frequentar outras unidades Alpha em território nacional ganham de bônus 30 dias de acesso ao aplicativo Weburn.</li>
+                        <li><span class="faq-highlight">Plano PLUS:</span> Mais energia, mais desempenho e mais liberdade para alcançar seus objetivos! Com o <span class="faq-highlight">Plano PLUS da Alpha Fit</span>, você treina sem limites, com acesso a equipamentos modernos, ambiente premium e total flexibilidade para sua rotina.</li>
+                        <li><span class="faq-highlight">Plano INFINITY:</span> Vá além dos seus limites com o <span class="faq-highlight">Plano INFINITY!</span> Aproveite acesso total às unidades Alpha Fit, treine com liberdade e desfrute de benefícios exclusivos como plano de saúde, cadeira de massagem e uma experiência premium criada para elevar sua saúde, conforto e qualidade de vida.</li>
+                        <li class=""><span class="faq-highlight">Adicionalmente, disponibilizamos pacotes especiais:</span></li>
+                        <li><span class="faq-highlight">Plano DAY-USE:</span> Experimente toda a energia da Alpha Fit sem compromisso! Com o <span class="faq-highlight">Plano Day-Use</span>, você tem acesso completo à academia por um dia inteiro, utilizando equipamentos modernos, áreas exclusivas e um ambiente preparado para elevar sua performance.</li>
+                        <li><span class="faq-highlight">Plano CORPORATIVO:</span> Invista no desempenho da sua equipe com o <span class="faq-highlight">Plano Corporativo</span> Alpha Fit. Proporcionamos acesso a treinos, equipamentos modernos e benefícios exclusivos para incentivar hábitos saudáveis, melhorar o bem-estar dos colaboradores e fortalecer a produtividade da sua empresa.</li>
+                        <li><span class="faq-highlight">Plano Plus Digital:</span> Leve a experiência Alpha Fit para o seu dia a dia com o Plano Plus Digital. Acompanhe seus treinos, organize sua rotina fitness e tenha acesso a recursos exclusivos pelo app, tudo com praticidade, tecnologia e total flexibilidade.</li>
                     </ul>
                 </details>
 
-                <details>
-                    <summary>Quais são as modalidades oferecidas ?</summary>
-                    <p>A <span class="modalidadesoferecida">Alpha Fit</span> oferece uma ampla variedade de modalidades exclusivas de exercícios, cada uma projetada para atender aos diferentes objetivos dos nossos alunos. Dessa forma, sua semana de treinos nunca será monótona, e você pode cuidar de todos os aspectos do seu corpo sem comprometer o seu orçamento. Confira as opções disponíveis:</p>
-                    <ul>
-                        <li><span>Alpha Velo:</span> Inicie sua jornada no <span>Alpha Velo</span>, um espaço completo para treino aeróbico e fortalecimento do sistema cardiovascular. Equipado com esteiras, bicicletas, remos, simuladores de escadas e elípticos, proporciona uma experiência abrangente para aprimorar sua resistência e saúde cardiovascular.</li>
-                        <li><span>Alpha Force:</span> Para treino de força, explore o <span>Alpha Force</span>, uma área com equipamentos modernos que otimizam a musculação e facilitam a execução de cada exercício indicado pelos instrutores. Um ambiente dedicado ao desenvolvimento muscular consistente.</li>
-                        <li><span>Alpha Itense:</span> Se o foco é ganho de força, resistência e agilidade, agende uma aula no Alpha Itense <span>Com</span> equipamentos para dinamizar e potencializar <span>o treino o Alpha Intense é nossa experiência em Cross training, nele você trabalha várias valências físicas ao mesmo tempo como força, flexibilidade, velocidade e coordenação, de forma dinâmica num treino pra cima.</span></li>
-                        <li><span>Alpha Speed:</span> No espaço <span>Alpha Speed</span>, desfrute de um treino aeróbico poderoso. Suba em uma das bikes e pedale com uma galera animada em direção à boa forma, garantindo resultados consistentes sem monotonia.</li>
-                        <li><span>Alpha Move:</span> Não para por aí! O espaço <span>Alpha Move</span> é o mais concorrido da Alpha Fit, oferecendo aulas dinâmicas e divertidas como <span>Pilates solo, Jump, Danças, Alongamento, GAP, HIIT, Alpha Fight</span> e muito mais. Verifique a disponibilidade na unidade escolhida e agende sua aula!</li>
+                <details class="faq-item">
+                    <summary class="faq-pergunta">Quais são as modalidades oferecidas ?</summary>
+                    <p class="descricao-faq">A <span class="alpha-blue">Alpha Fit</span> oferece uma ampla variedade de modalidades exclusivas de exercícios, cada uma projetada para atender aos diferentes objetivos dos nossos alunos. Dessa forma, sua semana de treinos nunca será monótona, e você pode cuidar de todos os aspectos do seu corpo sem comprometer o seu orçamento. Confira as opções disponíveis:</p>
+                    <ul class="faq-lista">
+                        <li><span class="faq-highlight">Alpha Velo:</span> Inicie sua jornada no <span class="faq-highlight">Alpha Velo</span>, um espaço completo para treino aeróbico e fortalecimento do sistema cardiovascular. Equipado com esteiras, bicicletas, remos, simuladores de escadas e elípticos, proporciona uma experiência abrangente para aprimorar sua resistência e saúde cardiovascular.</li>
+                        <li><span class="faq-highlight">Alpha Force:</span> Para treino de força, explore o <span class="faq-highlight">Alpha Force</span>, uma área com equipamentos modernos que otimizam a musculação e facilitam a execução de cada exercício indicado pelos instrutores. Um ambiente dedicado ao desenvolvimento muscular consistente.</li>
+                        <li><span class="faq-highlight">Alpha Itense:</span> Se o foco é ganho de força, resistência e agilidade, agende uma aula no Alpha Itense <span class="faq-highlight">Com</span> equipamentos para dinamizar e potencializar <span class="faq-highlight">o treino o Alpha Intense é nossa experiência em Cross training, nele você trabalha várias valências físicas ao mesmo tempo como força, flexibilidade, velocidade e coordenação, de forma dinâmica num treino pra cima.</span></li>
+                        <li><span class="faq-highlight">Alpha Speed:</span> No espaço <span class="faq-highlight">Alpha Speed</span>, desfrute de um treino aeróbico poderoso. Suba em uma das bikes e pedale com uma galera animada em direção à boa forma, garantindo resultados consistentes sem monotonia.</li>
+                        <li><span class="faq-highlight">Alpha Move:</span> Não para por aí! O espaço <span class="faq-highlight">Alpha Move</span> é o mais concorrido da Alpha Fit, oferecendo aulas dinâmicas e divertidas como <span class="faq-highlight">Pilates solo, Jump, Danças, Alongamento, GAP, HIIT, Alpha Fight</span> e muito mais. Verifique a disponibilidade na unidade escolhida e agende sua aula!</li>
                     </ul>
                 </details>
 
-                <details>
-                    <summary>Qual é o horário de funcionamento da Alpha Fit ?</summary>
-                    <p>
-                        O horário de funcionamento da <span class="modalidadesoferecida">Alpha Fit</span> varia de <span>5h da manhã</span> <span>às 23h30 da noite</span>, dependendo do dia da semana e da unidade escolhida. Para conferir o período de abertura de cada filial, acesse <a href="#">alphafit/unidades</a> e pesquise pelo local desejado.
+                <details class="faq-item">
+                    <summary class="faq-pergunta">Qual é o horário de funcionamento da Alpha Fit ?</summary>
+                    <p class="descricao-faq">
+                        O horário de funcionamento da <span class="alpha-blue">Alpha Fit</span> varia de <span class="faq-highlight">5h da manhã</span> <span class="faq-highlight">às 23h30 da noite</span>, dependendo do dia da semana e da unidade escolhida. Para conferir o período de abertura de cada filial, acesse <a class="botao-tag" href="#">alphafit/unidades</a> e pesquise pelo local desejado.
                     </p>
                 </details>
 
-                <details>
-                    <summary>Existem taxas adicionais além da mensalidade?</summary>
-                    <p>Na <span class="modalidadesoferecida">Alpha Fit</span>, você fica tranquilo. Aqui, não há multas, taxas, anuidades* e nem surpresas! Os valores das mensalidades e as condições podem variar de acordo com o plano escolhido e a unidade. Para mais detalhes sobre o regulamento, <a class="taxas" href="#">clique aqui.</a></p>
+                <details class="faq-item">
+                    <summary class="faq-pergunta">Existem taxas adicionais além da mensalidade?</summary>
+                    <p class="descricao-faq">Na <span class="alpha-blue">Alpha Fit</span>, você fica tranquilo. Aqui, não há multas, taxas, anuidades* e nem surpresas! Os valores das mensalidades e as condições podem variar de acordo com o plano escolhido e a unidade. Para mais detalhes sobre o regulamento, <a class="botao-tag" href="#">clique aqui.</a></p>
                 </details>
 
-                <details>
-                    <summary>Se eu me matricular no plano Plus ou plano INFINITY, posso treinar em outras unidades?</summary>
-                    <p>Sim! Ao assinar o <span>plano Plus ou INFINITY</span>, você pode treinar em qualquer unidade Alpha Fit do Brasil. Agora, caso você tenha adquirido o <span>plano Plus</span> ou <span>INFINITY</span> durante a pré-venda, a ativação dos benefícios está condicionada à inauguração da unidade escolhida.</p>
+                <details class="faq-item">
+                    <summary class="faq-pergunta">Se eu me matricular no plano Plus ou plano INFINITY, posso treinar em outras unidades?</summary>
+                    <p class="descricao-faq">Sim! Ao assinar o <span class="faq-highlight">plano Plus ou INFINITY</span>, você pode treinar em qualquer unidade Alpha Fit do Brasil. Agora, caso você tenha adquirido o <span class="faq-highlight">plano Plus</span> ou <span class="faq-highlight">INFINITY</span> durante a pré-venda, a ativação dos benefícios está condicionada à inauguração da unidade escolhida.</p>
                 </details>
 
-                <details>
-                    <summary>A Alpha Fit oferece aulas em grupo?</summary>
-                    <p>Sim, a <span class="modalidadesoferecida">Alpha Fit</span> disponibiliza aulas em grupo nos espaços Self Intense e Self Move para assinantes dos <span>planos Plus e INFINITY</span> agendáveis pelo app ou área do aluno.</p>
+                <details class="faq-item">
+                    <summary class="faq-pergunta">A Alpha Fit oferece aulas em grupo?</summary>
+                    <p class="descricao-faq">Sim, a <span class="alpha-blue">Alpha Fit</span> disponibiliza aulas em grupo nos espaços Self Intense e Self Move para assinantes dos <span class="faq-highlight">planos Plus e INFINITY</span> agendáveis pelo app ou área do aluno.</p>
                 </details>
 
-                <details>
-                  <summary>Quais são as opções de aulas oferecidas Pela Alpha Fit? </summary>
-                  <p>Algumas das aulas disponíveis para assinantes do plano Plus da Alpha Fit <span>são Pilates solo, Jump, SD Fit, Alongamento, GAP, HIIT, Self Fight</span> entre outros. Lembre-se de consultar a disponibilidade de aulas na unidade selecionada.</p>
+                <details class="faq-item">
+                  <summary class="faq-pergunta">Quais são as opções de aulas oferecidas Pela Alpha Fit? </summary>
+                  <p class="descricao-faq">Algumas das aulas disponíveis para assinantes do plano Plus da Alpha Fit <span class="faq-highlight">são Pilates solo, Jump, SD Fit, Alongamento, GAP, HIIT, Self Fight</span> entre outros. Lembre-se de consultar a disponibilidade de aulas na unidade selecionada.</p>
                 </details>
 
-                <details>
-                    <summary>Como faço para cancelar meu contrato ou plano Alpha Fit?</summary>
-                    <p>É sempre difícil ver um aluno deixar a família <span class="modalidadesoferecida">Alpha Fit</span>, mas entendemos que imprevistos podem ocorrer. Para facilitar o processo de cancelamento do seu plano, temos algumas opções:</p>
-                    <ul>
-                        <li><span>Presencialmente:</span> Visite a unidade mais próxima e informe a equipe sobre a sua decisão de cancelar o seu plano.</li>
-                        <li><span>Canal de Atendimento:</span> Clique no link para ser direcionado ao nosso canal de atendimento. <a href="#">atendimento</a> </li>
-                        <li><span>Só pedimos aos nossos alunos que enviem essas informações com, pelo menos, 15 dias de antecedência à data de renovação mensal. Isso evita que você pague pelos dias remanescentes da sua assinatura e nos permite processar o cancelamento de maneira eficiente.</span></li>
+                <details class="faq-item">
+                    <summary class="faq-pergunta">Como faço para cancelar meu contrato ou plano Alpha Fit?</summary>
+                    <p class="descricao-faq">É sempre difícil ver um aluno deixar a família <span class="alpha-blue">Alpha Fit</span>, mas entendemos que imprevistos podem ocorrer. Para facilitar o processo de cancelamento do seu plano, temos algumas opções:</p>
+                    <ul class="faq-lista">
+                        <li><span class="faq-highlight">Presencialmente:</span> Visite a unidade mais próxima e informe a equipe sobre a sua decisão de cancelar o seu plano.</li>
+                        <li><span class="faq-highlight">Canal de Atendimento:</span> Clique no link para ser direcionado ao nosso canal de atendimento. <a class="botao-tag" href="#">atendimento</a> </li>
+                        <li><span class="faq-highlight">Só pedimos aos nossos alunos que enviem essas informações com, pelo menos, 15 dias de antecedência à data de renovação mensal. Isso evita que você pague pelos dias remanescentes da sua assinatura e nos permite processar o cancelamento de maneira eficiente.</span></li>
                     </ul>
                 </details>
 
                 <div>
-                    <a href="#">Ver Mais Perguntas</a>
+                    <a class="saibamais-botao" href="#">Ver Mais Perguntas</a>
                 </div>
             </section>
         </aside>
-    </main>
-    <footer>
+           <div class="embaixador-img">
+           </div>
+           <div>
+            <img class="whatsapp" src="imagens/logo-what.png" alt="logo whatsapp">
 
-    </footer>
+           </div>
+    </section>
+    </main>
 
     <script>
         function clickMenu(){

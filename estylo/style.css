@@ -25,19 +25,17 @@ body{
 }
 header{
     display: flex;
-    padding: 10px;
-    flex-flow: column;
+    align-items: center;
+    background-color: white;
 
-    background-image: url(../imagens/header-banner.jpg);
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 header > nav{
     display: none;
 }
-header > nav > a {
+.menu-nav {
     display: flex;
     text-decoration: none;
     color: white;
@@ -49,43 +47,58 @@ header > nav > a {
     justify-content: center;
     transition: transform 0.3s ease;
 }
-header > nav > a:hover{
+.menu-nav:hover{
     background-color: #0231BD;
     text-decoration: underline;
     cursor: pointer;
     transform: scale(1.05);
 }
-header > img.logo{
-    width: 100%;
-    max-width: 220px;
-    margin: auto;
+.logo{
+    width: 140px;
 }
-span#burguer{
-    display: block;
-    color: white;
+#container{
+    display: flex;
+    align-items: center;
+}
+.btn-buscar{
+    background-image: linear-gradient(to right, var(--cor03), var(--cor01), var(--cor02));
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.btn-buscar:hover {
+    background-color: #003ef7;
+
+}
+#burguer{
+    color: rgb(4, 1, 1);
     padding: 10px;
     border-radius: 4px;
     text-align: center;
     cursor: pointer;
+    font-size: 3em;
 }
-span#burguer:hover{
+#burguer:hover{
     color: #0240f9;
 
 }
+
 main{
-    max-width: 800px;
-    min-height: 100vh;
-    background-color: white;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgb(241, 239, 239);
     margin: auto;
-    margin-top: 5px;
-    border-radius: 10px;
-    border: 2px solid black;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.492);
+   
 
     padding: 20px;
 }
  section > h1 {
     text-align: center;
     font-size: 1.5em;
+   margin: 30px 0px 10px;
 }
 section > p {
     text-align: justify;
@@ -101,17 +114,20 @@ div.duvida > p{
     margin-top: 5px;
     margin-bottom: 8px;
 }
-div.container{
+.cards{
     display: flex;
     flex-flow: column;
     align-items: center;
     gap: 20px;
-    margin: 10px;
+    
 }
-section#planosunidades > p {
+.descricao-unidade {
+    margin-top: 20px;
     text-align: center;
+    font-size: 1.1em;
 }
-div.hero1, div.hero2 {
+ .card2 , .card1 {
+
     width: 100%;
     max-width: 300px;
     height: 400px;
@@ -122,8 +138,11 @@ div.hero1, div.hero2 {
     flex-flow: column;
     align-items: center;
     transition: transform 0.4s ease;
-}
-div.hero1 {
+
+ }
+
+
+.card1 {
     background-image: url(../imagens/gym.jpg);
     background-size: cover;
     background-position: center center;
@@ -131,16 +150,20 @@ div.hero1 {
     background-attachment: scroll;
 
 }
-div.hero2{
+.card2{
     background-image: url(../imagens/gym2.jpg);
     background-size: cover;
     background-attachment: scroll;
 }
-div.hero1:hover, div.hero2:hover {
+.card1:hover, .card2:hover {
     transform: scale(1.03);
     cursor: pointer;
 }
-div.hero2 > h3, div.hero1 > h3 {
+
+
+
+
+.titulo-plano {
     text-align: center;
     color: white;
     padding: 20px;
@@ -149,20 +172,21 @@ div.hero2 > h3, div.hero1 > h3 {
 
     text-shadow: 1px 1px 0px var(--cor02);
 }
-div.hero2 > p.apartir{
+.texto-preco{
     color: white;
     margin-bottom: 10px;
 }
-div.hero2 > p.reais {
+.valor-plano {
     color: #0040ff;
     font-size: 1.6em;
     font-weight: bolder;
 }
-div.hero2 > p.nmes{
+.periodo-plano{
     color: white;
     margin-top: 10px;
+    font-size: 1.2em;
 }
-div.hero2 > a, div.hero1 > a{
+.card-botao {   
     background-color: #0040ff7c;
     text-decoration: none;
     color: white;
@@ -172,30 +196,22 @@ div.hero2 > a, div.hero1 > a{
     margin:auto;
     margin-top: 20px;
 }
-div.hero2 > a:hover, div.hero1 > a:hover {
+.card-botao:hover {
     background-color: var(--cor02);
     text-decoration: underline;
     transition: 2s;
     transform:  scale(1.05);
 }
-div.hero2 > ul.pinfinity{
+.beneficios-plano{
     color: white;
     text-decoration: none;
     padding: 10px;
+    margin-top: 10px;
 
     letter-spacing: 2px;
 }
 
-div.hero1 > p {
-    color: white;
-    
-}
-div.hero1 > p.partir{
-    color: aliceblue;
-    text-align: center;
-    font-size: 0.9em;
-}
-div.hero1 > p.plano{
+.valor-plano{
     color: #0040ff;
     font-weight: bolder;
     font-size: 1.6em;
@@ -203,29 +219,14 @@ div.hero1 > p.plano{
     margin: auto;
     margin-top: 10px;
 }
-div.hero1 > p.mes{
-    font-size: 0.9em;
-}
-div.hero1 > ul {
-    color: rgb(250, 251, 251);
-    padding: 20px;
-    letter-spacing: 2px;
-    margin-top: 10px;
-}
-section > p > span.alpha{
-    color: white;
-    background-color: #00207e ;
-    border-radius: 10px;
-    padding: 6px;
-    font-size: 0.9em;
-    font-weight: bolder;
-}
-section > p{
+
+.descricao-duvida{
     margin-top: 30px;
     text-indent: 30px;
     text-align: center;
 }
-section > div.aviso { 
+
+.aviso { 
     display: flex;
     border: 3px solid #0231BD;
     max-width: 540px;
@@ -238,27 +239,24 @@ section > div.aviso {
     justify-content: flex-start;
     gap: 8px;
 }
-section > div.aviso > h3 {
+.titulo-aviso {
     margin-top: 10px;
     color: #0231BD;
     font-size: 1.2em;
     
 }
-section > div.aviso > ul{
+.descricao-aviso{
     list-style: decimal;
     padding-left: 54px;
 }
-section > div.aviso > ul > li {
+.descricao-aviso li {
     margin-top: 5px;
 }
-section > div.aviso > ul > li > span{
-    font-weight: bold;
-}
-section > div.aviso >  img {
-    
+
+.ponto-exclamacao {
     max-width: 40px;
 }
-section#banner{
+#diferenciais{
     width: 100%;
     min-height: 300px;
     margin-top: 20px;
@@ -273,51 +271,60 @@ section#banner{
     overflow: hidden;
     border-radius: 20px;
 }
-section#banner > div.nos {
+.alpha-diferente{
+    color: white;
+}
+.fidelidade-adesao{
+    color: white;
+}
+.assunto-extra{
     color: white;
     padding: 10px;
     background-color: #00000056;
 }
-section#banner > div.nos > h1 > span{
+.alpha-blue{
+    font-weight: bolder;
     color: #0240f9;
 }
-section#banner > div.nos > h2 > span.diferente{
-    color: #003ef7;
-}
-section#banner > div.nos > p{
+.descricao{
+    color: white;
     margin-top: 5px;
 }
-section#banner > div.nos > h2 {
+.titulo-modalidades {
+    color: white;
     margin-top: 20px;
 }
-section#banner > div.nos > h2.modalidades > span{
-    color: #265af7;
-}
-section#banner > div.nos > h1.beneficios {
+
+.beneficios {
+    color: rgb(255, 255, 255);
     margin-top: 25px;
+    
 }
-section#banner > div.nos > div#imgapp{
+#imagem-aplicativo{
    box-shadow: 0px 0px 3px #003ef7;
    min-height: 350px;
    margin-top: 20px;
    
 }
-section#banner > div.nos > div#imgapp > div.appimagem{
+.appimagem{
     background-image: url(../imagens/alpha-app-1200.png);
     background-size: cover;
     height: 200px;
 }
-section#banner > div.nos > div#imgapp > h1.appalpha{
+.alpha-app{
+    color: white;
     font-size: 1.3em;
     margin-top: 10px;
     text-align: center;
 }
-section#banner > div.nos > div#imgapp > p{
+.descricao-app{
+    color: white;
     font-size: 0.9em;
     text-align: center;
-    margin-top: 4px;
+    margin-top: 6px;
+    padding: 5px;
 }
-section#banner > div.nos > p.saibamais > a{
+.saibamais-botao{
     display: flex;
     justify-content: center;
     background-color: #14224d94;
@@ -328,15 +335,15 @@ section#banner > div.nos > p.saibamais > a{
 
     transition: transform 0.3s ease;
 }
-section#banner > div.nos > p.saibamais > a:hover{
+.saibamais-botao:hover{
     background-color: #003ef7;
     text-decoration: underline;
     transform: scale(1.06);
 }
-section#banner > div.nos > div#imgapp > p.download{
+.download{
     margin-top: 20px;
 }
-section#banner > div.nos > div#imgapp > p.download > a {
+.download-app {
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -347,66 +354,65 @@ section#banner > div.nos > div#imgapp > p.download > a {
 
     transition: transform 0.4s ease;
 }
-section#banner > div.nos > div#imgapp > p.download > a:hover{
+.download-app:hover{
     background-color: #0040ff;
     text-decoration: underline;
     transform: scale(1.04);
 }
 
-aside > section > details > summary {
+.faq-pergunta {
     font-size: 1.3em;
     cursor: pointer;
     transition:  transform 0.3s ease ;
 }
-aside > section > details > summary:hover {
+.faq-pergunta:hover {
     color: #003ef7;
     transform: scale(1.05);
 }
-aside > section > details > p {
+.lista-titulo {
+    color: var(--cor03);
     text-align: center;
     margin-top: 10px;
     font-size: 1.1em;
+    list-style: none;
 }
 
-
-aside > section > details {
+.faq-item {
     padding: 15px 0px;
     border-bottom: 2px solid black;
+    cursor: pointer;
 }
-aside > section > details > ul, aside > section > details > ul > p{
+
+.descricao-faq{
     margin-top: 10px;
     
-    
 }
-aside > section > details > ul > li > span, aside > section > details > p > span, aside > section > details > ul > p > span{
+.faq-highlight{
     font-weight: bold;
 }
 
-aside > section > details > summary::after{
+.faq-pergunta::after{
     display: flex;
     transition:  transform 0.3s ease;
     list-style: none;
     content: "▼";
 }
-aside > section > details[open] > summary::after{
+.faq-item[open] .faq-pergunta::after{
     transform: rotate(180deg);
 }
-aside > section > details[open] > summary{
-    color: #003ef7;
-}
-aside > section > details > ul > li > span.taxaalpha, aside > section > details > p> span.modalidadesoferecida{
-    color: #0040ff;
-}
-aside > section > details > p > span.modalidadesoferecida, aside > section > details > p{
+
+.lista-titulo2{
     text-align: center;
 
 }
-aside > section > details > ul > li {
-    margin-top: 10px;
-    text-indent: 10px;
-    text-align: justify;
+.faq-item[open]{
+    color: var(--cor03);
 }
-aside > section > details > ul > li > a{
+.faq-lista li {
+    color: black;
+    margin-top: 7px;
+}
+.botao-tag{
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -415,34 +421,54 @@ aside > section > details > ul > li > a{
     border-radius: 10px; 
     transition:  transform 0.4s ease;
 }
-aside > section > details > ul > li > a:hover{
+
+.botao-tag:hover{
     cursor: pointer;
     background-color: #00207e;
     text-decoration: underline;
     transform: scale(1.05);
 
 }
-aside > section > details > p{
+
+.faq-lista-titulo{
     text-align: center;
 }
-aside > section > details >  p > a {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #003ef7;
-    color: white;
-    padding: 3px;
-    border-radius: 10px;
 
-    transition:  transform 0.4s ease;
-}
-aside > section > details > p  >  a:hover{
-    background-color: #00207e;
-    text-decoration: underline;
-    cursor: pointer;
-    transform: scale(1.07);
-
-}
-aside > section > details > p > a.taxas{
+.botao-taxas{
     font-size: 0.8em;
 
+}
+
+.descricao-faq{
+    color: black;
+    text-align: center;
+}
+.embaixador-img{
+    width: 100%;
+    min-height: 750px;
+    background-image: url(../imagens/embaixador-alpha.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+
+    box-shadow: 0px 0px 4px #0040ffca;
+    margin-top: 15px;
+
+    border-radius: 10px;
+}
+.whatsapp{
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    width: 60px;
+    transition: transform 0.3s ease;
+}
+.whatsapp:hover{
+    transform: scale(1.1);
+}
+#img-rotina{
+    background-image: url(../imagens/embaixador-alpha.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
 }
