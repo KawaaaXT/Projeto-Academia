@@ -10,14 +10,16 @@
 </head>
 <body>
     <header class="menu-nav-bar"> 
-        <div class="menu-na-bar-content">
-            <img class="logo" src="imagens/Alpha-Fit-200.png" alt="Logo da Alpha Fit"> 
+            <div class="img-logo-alpha">
+                <img class="logo-alpha" src="imagens/Alpha-Fit-200.png" alt="Logo da Alpha Fit"> 
+            </div>
         
-            <a class="btn-buscar"  href="#">Buscar Academia</a>
+          <div class="botao-buscar">
+              <a class="btn-buscar"  href="#">Buscar Academia</a>
+               <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+          </div>
         
-        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-        </div>
-
+    
         <nav id="mnburg">
             <a class="menu-nav" href="#">UNIDADES</a>
             <a class="menu-nav" href="#">PLANOS</a>
@@ -73,7 +75,7 @@
             <section id="planos-aviso">
                 <p class="descricao-unidade">Confira os valores dos planos na unidade <span class="alpha-blue">ALPHA FIT</span> desejada.</p>
                 <div class="aviso">
-                    <img class="ponto-exclamacao" src="imagens/ponto-de-exclamacao.png" alt="ponto de exclamção">
+                    <img class="icons" src="imagens/ponto-de-exclamacao.png" alt="ponto de exclamção">
                     <h3 class="titulo-aviso">AVISO:</h3>
                     <ul class="descricao-aviso">
                         <li >
@@ -107,7 +109,7 @@
                     <div class="appimagem">
                     </div>
                     <h1 class="alpha-app">ALPHA FIT APP</h1>
-                    <p class="descricao-app">
+                    <p class="descricao">
                         Fique Por Dentro das ultimas novidades, organize sua rotina de treinos e agende suas aulas coletivas da semana, tudo pelo app Alpha Fit
                     </p>
                         <a class="download-app" href="#">DOWNLOAD APP</a>
@@ -206,14 +208,57 @@
                 </div>
             </section>
         </aside>
-           <div class="embaixador-img">
-           </div>
-           <div>
-            <img class="whatsapp" src="imagens/logo-what.png" alt="logo whatsapp">
+         <article>
+            <div class="embaixador-img"></div>
+        </article>
+           
 
+          <article>
+            <div class="logo-whatsapp">
+            <img class="whatsapp" src="imagens/logo-what.png" alt="logo whatsapp">
            </div>
+          </article>
     </section>
     </main>
+    <footer id="roda-pe">
+        <h2 class="titulo-central">Central de acolhimento ao cliente</h2>
+        <article class="central-atendimento">
+            <div class="content-icon">
+                <img class="icon-central" src="imagens/central-de-atendimento.png" alt="">
+            </div>
+            <div>
+                <p class="descricao-central">
+                    
+                    Ainda precisa de ajudar?, Clique abaixo e fale com nosso time :)
+                    
+                </p>
+
+                 <p class="btn-fale-time">
+                    <a class="botao-time" href="#">Fale com a gente</a>
+                </p>
+                <div class="logo-white-content">
+                    <img class="logo-white" src="imagens/alpha-fit-optimized.webp" alt="logo alpha fit white">
+
+                    
+                     <a class="btn-voltar" href="index.html">
+                        <img class="logo-voltar" src="imagens/voltar-ao-topo (1).png" alt="icon voltar ao topo">
+                        
+                     Voltar ao Topo
+                    
+                    </a>
+                    
+                </div>
+            </div>
+            </div>
+             
+           
+            
+            
+
+        </article>
+        
+
+    </footer>
 
     <script>
         function clickMenu(){

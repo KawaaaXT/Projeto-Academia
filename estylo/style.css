@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "HOSHIKO" ;
-    src: url(../fonts/Hoshiko\ Satsuki.ttf) format("truetype");
+    src: url(../fonts/Hoshiko\Satsuki.ttf) format("truetype");
     font-weight: normal;
 }
 
@@ -14,6 +14,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    border: 2px dashed blue;
     box-sizing: border-box;
 }
 body, html {
@@ -24,9 +25,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.menu-nav-bar{
+header{
     display: flex;
-    background-color: rgb(236, 234, 234);
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
 }
 
 #mnburg{
@@ -49,11 +52,13 @@ body{
     cursor: pointer;
     transform: scale(1.05);
 }
-.logo{
+.logo-alpha{
     width: 140px;
 }
-
-
+.botao-buscar{
+    display: flex;
+    align-items: center;
+}
 .btn-buscar{
     background-color: #00207e;
     color: rgb(255, 255, 255);
@@ -88,17 +93,20 @@ main{
     width: 100%;
     min-height: 100%;
     background-color: rgb(241, 239, 239);
-    margin: auto;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.492);
+    padding: 20px;
+
+    margin: 0;
    
 
-    padding: 20px;
+    
 }
  section > h1 {
     text-align: center;
     font-size: 1.5em;
    margin: 30px 0px 10px;
 }
+ 
 section > p {
     text-align: justify;
     font-size: 1.3em;
@@ -191,14 +199,14 @@ div.duvida > p{
     color: white;
     padding: 10px;
     border-radius: 10px;
-
+    transition: transform 0.5s ease;
     margin:auto;
     margin-top: 20px;
 }
 .card-botao:hover {
     background-color: var(--cor02);
     text-decoration: underline;
-    transition: 2s;
+    
     transform:  scale(1.05);
 }
 .beneficios-plano{
@@ -252,7 +260,8 @@ div.duvida > p{
     margin-top: 5px;
 }
 
-.ponto-exclamacao {
+.icons{
+    
     max-width: 40px;
 }
 #diferenciais{
@@ -316,7 +325,7 @@ div.duvida > p{
     margin-top: 10px;
     text-align: center;
 }
-.descricao-app{
+.descricao{
     color: white;
     font-size: 0.9em;
     text-align: center;
@@ -442,7 +451,7 @@ div.duvida > p{
     background-attachment: scroll;
 
     box-shadow: 0px 0px 4px #0040ffca;
-    margin-top: 15px;
+    margin-top: 6px;
 
     border-radius: 10px;
 }
@@ -455,10 +464,129 @@ div.duvida > p{
 }
 .whatsapp:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
+.titulo-central{
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+
+    font-weight: bolder;
+}
+.central-atendimento {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    border-bottom: 1px solid white;
+
+}
+.descricao-central{
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    margin-top: 7px;
+
+    text-shadow: 0px 0px 2px white;
+}
+.content-icon{
+    padding: 10px;
+    margin-top: 7px;
+}
+.icon-central{
+    width: 40px;
+}
+
+.btn-fale-time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    margin: 10px 0px 10px;
+    
+}
+.botao-time{
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+
+    font-weight: bolder;
+    border-radius: 20px;
+
+    transition: transform 0.4s ease;
+}
+.botao-time:hover{
+    color: var(--cor03);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.container-logo-alpha{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+   
+}
+.topo{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+.topo:hover{
+    text-decoration: underline;
+}
+.topo::before{
+    content: "↑";
+    margin-right: 10px;
+}
+.voltar-ao-topo{
+    width: 20px;
+    
+}
+
+.logo-white-content{
+
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: red;
+    
+    
+}
+
+.logo-white{
+    display: block;
+    margin: 0;
+    width: 120px;
+    
+    
+}
+.btn-voltar{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    text-decoration: none;
+    color: white;
+}
+
+.logo-voltar{
+    width: 30px;
+}
+
+
 #img-rotina{
     background-image: url(../imagens/embaixador-alpha.jpeg);
     background-size: cover;
     background-position: center;
     min-height: 400px;
+}
+
+#roda-pe{
+    width: 100%;
+    background-color: black;
+    min-height: 550px;
 }
