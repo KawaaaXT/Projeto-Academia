@@ -14,7 +14,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    border: 2px dashed blue;
     box-sizing: border-box;
 }
 body, html {
@@ -550,17 +549,18 @@ div.duvida > p{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     
-    background-color: red;
+
     
     
 }
 
 .logo-white{
-    display: block;
-    margin: 0;
     width: 120px;
+    margin: 0px 0px 0px -18%;
+
+
     
     
 }
@@ -571,6 +571,8 @@ div.duvida > p{
 
     text-decoration: none;
     color: white;
+
+   margin: 0px 0px 20px 0px;
 }
 
 .logo-voltar{
@@ -589,4 +591,5 @@ div.duvida > p{
     width: 100%;
     background-color: black;
     min-height: 550px;
+    padding: 5px;
 }
